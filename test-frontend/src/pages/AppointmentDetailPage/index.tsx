@@ -116,7 +116,7 @@ export default function AppointmentDetail() {
               </button>}
           </div>
         </div>
-        {currentLock &&
+        {currentLock && currentLock.userId !== currentUser?.id  &&
           <>
             <Alert title="Locked for Editing" description={`locked by ${currentLock.userInfo.email}`} expiresAt={currentLock.expiresAt} />
           </>}

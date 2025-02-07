@@ -17,10 +17,10 @@ async function createUser(req: Request, res: Response) {
 
     if (getUserByEmail) {
       res.json(getUserByEmail);
+    }else {
+      const user = await UserService.createUser(name, email, role);
+      res.json(user);
     }
-
-    const user = await UserService.createUser(name, email, role);
-    res.json(user);
   } catch (err) {
     res.status(400).json({ error: err.message });
   }

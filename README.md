@@ -34,6 +34,7 @@ Backend
 - Realtime display other user cursor, successfuly broadcasted the coordinate of another user, but when coordinate changes, there is always rerender and break the react hooks, still figure out how to serve coordinate change on client
 
 #### Improvement Notes
+- Lock unlock rate limiting
 - Realtime user cursor
 - add Unit test to mock race condition
 - end to end testing
