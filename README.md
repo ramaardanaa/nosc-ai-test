@@ -1,4 +1,6 @@
 ### Nosc-AI test
+### UML Diagram
+![chatuml-diagram](https://github.com/user-attachments/assets/027512f1-34cb-485d-afb2-95862abbcc0b)
 
 #### Tech Stack
 Frontend
