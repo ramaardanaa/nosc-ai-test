@@ -24,24 +24,4 @@ export class Appointment {
 
   @UpdateDateColumn({ name: "updated_at" })
   updatedAt: Date;
-
-  @BeforeInsert()
-  static addDummyData() {
-    console.log('process.env.NODE_ENV', process.env.NODE_ENV);
-    if (process.env.NODE_ENV === 'development') {
-      const dummyAppointments = [
-        { patientName: 'John Doe', doctorName: 'Dr. Smith', appointmentDate: '2021-12-01', appointmentTime: '09:00' },
-        { patientName: 'Jane Smith', doctorName: 'Dr. Brown', appointmentDate: '2021-12-01', appointmentTime: '10:00' }
-      ];
-      dummyAppointments.forEach(appointment => {
-        const appointmentEntity = new Appointment();
-        appointmentEntity.patientName = appointment.patientName;
-        appointmentEntity.doctorName = appointment.doctorName;
-        appointmentEntity.appointmentDate = appointment.appointmentDate;
-        appointmentEntity.appointmentTime = appointment.appointmentTime;
-        const appointmentRepository = AppointmentRepository();
-        appointmentRepository.save(appointmentEntity);
-      });
-    }
-  }
 }

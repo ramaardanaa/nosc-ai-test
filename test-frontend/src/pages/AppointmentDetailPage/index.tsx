@@ -31,7 +31,6 @@ export default function AppointmentDetail() {
       }
 
       if (data.type === "takeover-request") {
-        console.log("takeover-request", data);
         getTakeoverRequest(id!);
       }
     }
@@ -65,9 +64,6 @@ export default function AppointmentDetail() {
       removeTakeoverRequest(id!);
     }
   }
-
-  console.log(takeoverRequest[id!]);
-
 
   const handleApproveTakeover = async (takeoverRequest: TakeoverRequest) => {
     await handleCancel();

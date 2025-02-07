@@ -59,7 +59,6 @@ import AppointmentService from "../services/AppointmentService";
   async function getTakeoverRequest(req: Request, res: Response) {
     try {
       const request = await AppointmentService.getTakeoverRequest(req.params.id);
-      console.log(request, 'ini dia');
       res.json(request);
     } catch (err) {
       res.status(400).json({ error: err.message });

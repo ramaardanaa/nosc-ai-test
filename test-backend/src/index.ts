@@ -16,7 +16,7 @@ AppDataSource.initialize().then(async () => {
   });
   app.use("/api", router);
 
-  app.listen(5001, () => console.log("Server running on port 5000"));
+  app.listen(5001, () => console.log("Server running on port 5001"));
   seedAppointment();
 
 }).catch(error => console.log(error))
