@@ -12,6 +12,7 @@ Backend
 - express w/ Typescript
 - ioredis
 - typeorm with postgre
+- containerize in docker
 
 #### Sample Usage Video URL
 ```
