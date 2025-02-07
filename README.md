@@ -20,8 +20,10 @@ https://www.loom.com/share/b3ec88d8259142449abaf0eb10464d72?sid=f5628f95-0ba5-41
 
 ##### Backend
 - install orbstack (recommended) or docker dekstop first and open when done installing
+- `npm install`
 - `npm run dev`
 ##### Frontend 
+- `npm install`
 - `npm run dev`
 
 #### Notes
