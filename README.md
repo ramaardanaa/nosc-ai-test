@@ -41,3 +41,4 @@ https://www.loom.com/share/b3ec88d8259142449abaf0eb10464d72?sid=f5628f95-0ba5-41
 - add proper auth on user
 - add submit edit appointment
 - add audit log when someone change appointment and store it on postgresql
+- better sanitizing the field using zod or change to graphql
